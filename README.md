@@ -35,16 +35,14 @@ bundle install
 rails db:create
 ```
 
+- Database initialization
+
 ```
 rails db:migrate
 ```
 
-- Database initialization
+- To start the Server run :
 
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions
-
-- ...
+```
+rails server
+```

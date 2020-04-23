@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PmTool</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+  <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+  <%# link_to 'Question Index', '/questions' %>
+  <%= link_to 'Home PM Tool', '/' %>
+  | 
+  <%= link_to 'About', about_path %>
+</nav>
+    <%= yield %>
+  </body>
+</html>

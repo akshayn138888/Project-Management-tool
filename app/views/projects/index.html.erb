@@ -1,0 +1,23 @@
+<h1>Projects Index Page</h1>
+
+<div class="row">
+  <div class="col-2"></div>
+
+  <div class="col-10">
+    <% @projects.each do |project| %> <%# if you pass a instance to link_to it
+    will create the href='/questions/:id' %>
+    <%= link_to project do %> 
+    <li class="list-group-item">
+      <p><%= project.id %> <%= project.title %></p>
+    </li>
+    <% end %> <% end %> <%# link_to just creates a `a tag` with the correct
+    href. the below is equivalent to the above code %> <% if false %> <%
+    @projects.each do |project| %>
+    <a href="/projects/<%= project.id %>">
+      <li class="list-group-item">
+        <p><%= project.id %> <%= project.title%></p>
+      </li>
+    </a>
+    <% end %> <% end %>
+  </div>
+</div>
